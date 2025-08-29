@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UTMACH – Credencial Estudiantil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --azul:#184f8c;
+      --rojo:#b3262e;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--texto); background:#fff;
+    }
+    /* Barra superior */
+    .topbar{
+      background:var(--azul);
+      color:#fff;
+      padding:18px 16px;
+      display:flex; align-items:center; gap:12px;
+      border-bottom:4px solid var(--rojo);
+    }
+    .logo{display:flex; align-items:center; gap:10px;}
+    .logo img{ height:50px; width:auto; display:block; background:#fff; border-radius:50%; padding:4px;}
+    .brand{ line-height:1; }
+    .brand-uni{ font-weight:800; font-size:22px; letter-spacing:.2px; }
+    .brand-slogan{ font-size:12px; opacity:.9; }
+
+    /* Contenido */
+    .wrap{ max-width:760px; margin:0 auto; padding:28px 16px 64px; }
+    h1{
+      margin:6px 0 8px; font-size:34px; font-weight:800; text-transform:uppercase; text-align:center;
+    }
+    .meta{ text-align:center; font-size:15px; color:#4b5563; margin-bottom:18px; }
+    .meta a{ color:#1d4ed8; text-decoration:underline; }
+
+    /* Tarjeta Facultad */
+    .card{ border:1px solid #d8dee8; border-radius:12px; overflow:hidden; box-shadow:0 1px 4px rgba(0,0,0,.04); background:#fff;}
+    .card-head{ background:var(--azul); color:#fff; font-weight:700; text-align:center; padding:14px; font-size:18px; }
+    .card-body{ padding:22px 18px 28px; text-align:center; }
+    .foto-wrap{ display:inline-block; border:4px solid var(--rojo); border-radius:12px; padding:8px; }
+    .foto{ width:280px; max-width:70vw; height:auto; border-radius:8px; display:block; }
+    .periodo{ margin-top:16px; color:#6b7280; }
+    .carrera{ margin-top:6px; font-size:22px; font-weight:800; letter-spacing:.3px; text-transform:uppercase; }
+
+    /* Pie */
+    footer{ position:fixed; left:0; right:0; bottom:0; border-top:1px solid #e5e7eb; background:#fafafa; }
+    .foot-inner{ max-width:760px; margin:0 auto; padding:14px 16px; text-align:center; color:#6b7280; font-weight:600; }
+
+    @media (max-width:420px){
+      h1{ font-size:26px; }
+      .brand-uni{ font-size:20px; }
+      .card-head{ font-size:16px; }
+      .carrera{ font-size:18px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Encabezado institucional -->
+  <header class="topbar">
+    <div class="logo">
+      <!-- Logo oficial UTMACH -->
+      <img src="https://www.utmachala.edu.ec/portalwp/wp-content/uploads/2021/05/escudo.png" alt="Escudo UTMACH" />
+      <div class="brand">
+        <div class="brand-uni">UTMACH</div>
+        <div class="brand-slogan">Calidad, Pertinencia y Calidez</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h1>BELDUMA MEDINA JOE<br>DERLIS</h1>
+    <div class="meta">
+      Cédula/Pasaporte: <a href="#">0707340949</a><br>
+      Tipo Sangre: O+
+    </div>
+
+    <section class="card">
+      <div class="card-head">FACULTAD DE INGENIERÍA CIVIL</div>
+      <div class="card-body">
+        <span class="foto-wrap">
+          <!-- Foto del estudiante (ejemplo, reemplazar por real) -->
+          <img class="foto" src="https://via.placeholder.com/280x350.png?text=FOTO" alt="Foto del estudiante" />
+        </span>
+        <div class="periodo">Período 2025-2</div>
+        <div class="carrera">TECNOLOGÍAS DE LA INFORMACIÓN</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="foot-inner">app.utmachala.edu.ec</div>
+  </footer>
+</body>
+</html>
